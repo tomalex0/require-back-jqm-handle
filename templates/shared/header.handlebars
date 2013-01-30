@@ -1,0 +1,13 @@
+<div data-role="header" data-position="fixed" data-theme="b" class="grid">
+       	{{#if isback}}
+        	{{> backbtn}}
+        {{/if}}
+        
+        <h1>{{t headertitle}}</h1>
+        
+        {{#if ismenu}}
+		<div class="ui-btn-right">
+			{{> language}}
+		</div>
+       	{{/if}}
+</div>

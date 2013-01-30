@@ -1,0 +1,1 @@
+If locales to be  served from local json files
