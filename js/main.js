@@ -26,7 +26,7 @@ require.config({
     }
 
 });
-var dataurl =  "http://localhost/require_back_jqm_handle/", lang = "fr";
+var dataurl =  "", lang = "fr";
 require(['jquery', 'jquerymobile', 'underscore', 'backbone', 'domReady', 'router', 'i18n', 'locales', 'handlebars', 'tplplugin', 'precompiledtpl', 'tplpartials', 'utilities'], function ($, jqmobile, _, Backbones, domReady, router, i18n, locales) {
     
     // Remove page from DOM when it's being replaced
