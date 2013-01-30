@@ -49,7 +49,7 @@ require(['jquery', 'jquerymobile', 'underscore', 'backbone', 'domReady', 'router
         i18n.init({ resStore: locales, lng : lang },function(){
             new router();
 	    // root needed to be changed based on source path, pushState is used to enable html5 pushstate
-            Backbone.history.start({pushState: true, root : '/github_repo/require-back-jqm-handle/'});
+            Backbone.history.start({pushState: true, root : '/require-back-jqm-handle/'});
         });
         
         
