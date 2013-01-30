@@ -1,0 +1,2 @@
+
+handlebars templates/ -f precompiled/templates.js
