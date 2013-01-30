@@ -1,4 +1,4 @@
- [View Demo](http://tomalex0.github.com/require-back-jqm-handle/login)
+ [View Demo](http://tomalex0.github.com/require-back-jqm-handle)
 -
 
 JqueryMobile implementation with Require js
