@@ -16,6 +16,7 @@ require.config({
     spec: '../jasmine/spec',
     precompiledtpl: '../precompiled/templates',
     templates: '../templates',
+    i18n: 'libs/i18n/i18next.amd-1.5.10'
    
   },
   shim: {
@@ -40,7 +41,7 @@ require.config({
 
 
 
-var dataurl =  "http://localhost/require_back_jqm_handle/";
+var dataurl =  (document.location.host != "tomalex0.github.com") ? "http://localhost/github_repo/require-back-jqm-handle/" : "http://tomalex0.github.com/require-back-jqm-handle/", lang = "fr";
 require(['jquery', 'underscore', 'backbone', 'domReady', 'jasmine-html', 'sinon', 'tplplugin', 'precompiledtpl', 'tplpartials'], function($,  _, Backbones, domReady, jasmine){
 
   var jasmineEnv = jasmine.getEnv();

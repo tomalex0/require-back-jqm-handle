@@ -27,6 +27,7 @@ require.config({
 
 });
 var dataurl =  "", lang = "fr";
+var pushpath = (document.location.host != "tomalex0.github.com") ? "/github_repo/require-back-jqm-handle/" : "/require-back-jqm-handle/"
 require(['jquery', 'jquerymobile', 'underscore', 'backbone', 'domReady', 'router', 'i18n', 'locales', 'handlebars', 'tplplugin', 'precompiledtpl', 'tplpartials', 'utilities'], function ($, jqmobile, _, Backbones, domReady, router, i18n, locales) {
     
     // Remove page from DOM when it's being replaced
@@ -49,7 +50,7 @@ require(['jquery', 'jquerymobile', 'underscore', 'backbone', 'domReady', 'router
         i18n.init({ resStore: locales, lng : lang },function(){
             new router();
 	    // root needed to be changed based on source path, pushState is used to enable html5 pushstate
-            Backbone.history.start({pushState: true, root : '/require-back-jqm-handle/'});
+            Backbone.history.start({pushState: true, root : pushpath});
         });
         
         
