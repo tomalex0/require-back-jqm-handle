@@ -3,6 +3,7 @@ define(['jquery', 'underscore', 'backbone', 'jquerymobile', 'views/loginView', '
 	var Router = Backbone.Router.extend({
 		routes : {
 			'' 	: 'defaultAction',
+			'index.html' 	: 'defaultAction',
 			'login' : 'login',
 			'home' 	: 'home'
 		},
