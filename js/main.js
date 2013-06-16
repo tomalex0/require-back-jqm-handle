@@ -27,7 +27,8 @@ require.config({
 
 });
 var dataurl =  "", lang = "fr";
-var pushpath = (document.location.host != "tomalex0.github.io") ? "/require-back-jqm-handle/" : "/require-back-jqm-handle/"
+//var pushpath = (document.location.host != "tomalex0.github.io") ? "/require-back-jqm-handle/" : "/require-back-jqm-handle/"
+pushpath ="/require-back-jqm-handle/"
 require(['jquery', 'jquerymobile', 'underscore', 'backbone', 'domReady', 'router', 'i18n', 'locales', 'handlebars', 'tplplugin', 'precompiledtpl', 'tplpartials', 'utilities'], function ($, jqmobile, _, Backbones, domReady, router, i18n, locales) {
     
     // Remove page from DOM when it's being replaced
